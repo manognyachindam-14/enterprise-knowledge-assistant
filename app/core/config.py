@@ -5,7 +5,7 @@ class Settings(BaseSettings):
     app_name: str
     app_env: str
     debug: bool
-
+    database_url: str
     model_config = SettingsConfigDict(
         env_file=".env.project",
         env_file_encoding="utf-8"
